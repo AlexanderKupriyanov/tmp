@@ -4,8 +4,6 @@ jobs:
   build-and-test:
     docker:
       - image: cypress/base:8:0:0
-    executor:
-      name: node/default
     steps:
       - checkout
       - node/with-cache:
