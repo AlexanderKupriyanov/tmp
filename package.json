@@ -1,0 +1,8 @@
+{
+  "name": "my-new-package",
+  "version": "1.0.0",
+  "dependencies": {
+    "browser-sync": "2.26.7",
+    "gulp": "3.9.1"
+  }
+}
