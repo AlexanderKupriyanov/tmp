@@ -4,5 +4,11 @@
   "dependencies": {
     "browser-sync": "2.26.7",
     "gulp": "3.9.1"
+  },
+  "scripts": {
+    "serv": "gulp"
+  },
+  "devDependencies": {
+    "cypress": "^4.8.0"
   }
 }
