@@ -6,7 +6,7 @@
     "gulp": "3.9.1"
   },
   "scripts": {
-    "serv": "gulp"
+    "serv": "gulp",
     "cyp": "./node_modules/.bin/cypress run tst_spec.js"
   },
   "devDependencies": {
