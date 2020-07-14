@@ -1,8 +1,9 @@
-version: 2.1
-orbs:
-  node: cypress/base:8:0:0
+version: 2
+
 jobs:
   build-and-test:
+    docker:
+      - image: cypress/base:8:0:0
     executor:
       name: node/default
     steps:
