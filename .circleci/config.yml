@@ -6,10 +6,27 @@ jobs:
       - image: cypress/base:8:0:0
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run: npm install
-            - run: npm serv & cypress run tst_spec.js
+      - restore_cache:
+          keys:
+          - v1-dep-sgk_web-{{ checksum "package.json" }}
+      - run: npm install
+      - save_cache:
+          key: v1-dep-sgk_web-{{ checksum "package.json" }}
+          paths:
+          # This is a broad list of cache paths to include many possible development environments
+          # You can probably delete some of these entries
+          - vendor/bundle
+          - ~/virtualenvs
+          - ~/.m2
+          - ~/.ivy2
+          - ~/.bundle
+          - ~/.go_workspace
+          - ~/.gradle
+          - ~/.cache/bower
+          # These cache paths were specified in the 1.0 config
+          - node_modules
+          - ./node_modules
+      - run: npm serv & cypress run tst_spec.js
 workflows:
     version: 2
     build-and-test:
