@@ -7,6 +7,7 @@
   },
   "scripts": {
     "serv": "gulp"
+    "cyp": "./node_modules/.bin/cypress run tst_spec.js"
   },
   "devDependencies": {
     "cypress": "^4.8.0"
