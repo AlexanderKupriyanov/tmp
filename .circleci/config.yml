@@ -26,6 +26,7 @@ jobs:
           # These cache paths were specified in the 1.0 config
           - node_modules
           - ./node_modules
+          - /root/.cache/Cypress
       - run: npm run serv & npm run cyp
 workflows:
     version: 2
