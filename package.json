@@ -14,7 +14,7 @@
     "underscore": "~1.4.4"
   },
   "scripts": {
-    "serv": "gulp",
+    "serv": "./node_modules/.bin/gulp",
     "cyp": "cypress run --spec cypress/integration/tst_spec.js"
   },
   "devDependencies": {
