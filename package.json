@@ -2,14 +2,58 @@
   "name": "my-new-package",
   "version": "1.0.0",
   "dependencies": {
+    "async": "~0.2.8",
     "browser-sync": "2.26.7",
-    "gulp": "3.9.1"
+    "express": "~3.2.4",
+    "express-hbs": "~0.2.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "gulp": "^3.9.1",
+    "jshint-junit-reporter": "0.0.6",
+    "request": "~2.21.0",
+    "through": "^2.3.8",
+    "underscore": "~1.4.4"
   },
   "scripts": {
     "serv": "gulp",
-    "cyp": "./node_modules/.bin/cypress run tst_spec.js"
+    "cyp": "./node_modules/.bin/cypress run --spec tst_spec.js"
   },
   "devDependencies": {
+    "bower": "^1.8.0",
+    "grunt": "0.4.5",
+    "grunt-concurrent": "^2.0.0",
+    "grunt-contrib-clean": "0.6.0",
+    "grunt-contrib-coffee": "0.11.1",
+    "grunt-contrib-compass": "0.9.1",
+    "grunt-contrib-concat": "0.5.0",
+    "grunt-contrib-connect": "0.8.0",
+    "grunt-contrib-copy": "0.5.0",
+    "grunt-contrib-jshint": "0.10.0",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-contrib-yuidoc": "0.5.2",
+    "grunt-express-server": "0.4.19",
+    "grunt-kss": "0.2.8",
+    "grunt-newer": "0.7.0",
+    "grunt-notify": "~0.2",
+    "grunt-open": "0.2.3",
+    "grunt-requirejs": "0.4.2",
+    "grunt-shell": "0.7.0",
+    "grunt-text-replace": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-ejs": "^3.0.0",
+    "gulp-json-transform": "^0.4.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-requirejs-optimize": "^1.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.5.2",
+    "gulp-yaml": "^1.0.1",
+    "jshint-stylish": "0.4.0",
+    "matchdep": "0.3.0",
+    "merge": "^1.2.0",
+    "mocha-phantomjs": "~3.1.0",
+    "time-grunt": "0.4.0",
     "cypress": "^4.8.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
   }
 }
