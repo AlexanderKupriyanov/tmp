@@ -14,7 +14,7 @@
     "underscore": "~1.4.4"
   },
   "scripts": {
-    "postinstall": "bower install",
+    "postinstall": "echo '{ \"allow_root\": true }' > /root/.bowerrc && bower install",
     "serv": "./node_modules/.bin/gulp",
     "cyp": "cypress run --spec cypress/integration/tst_spec.js"
   },
