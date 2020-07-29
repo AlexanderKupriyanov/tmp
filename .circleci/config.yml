@@ -23,8 +23,7 @@ jobs:
           keys:
           - v2-dep-sgk_web-{{ checksum "package.json" }}
       - run: npm install
-      - run: nvm install 8.9.3 && nvm alias default 8.9.3
-      - run: npm install -g cypress@^4.8.0
+
       - save_cache:
           key: v2-dep-sgk_web-{{ checksum "package.json" }}
           paths:
