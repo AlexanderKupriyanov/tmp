@@ -14,7 +14,7 @@
     "underscore": "~1.4.4"
   },
   "scripts": {
-    "postinstall": "echo '{ \"allow_root\": true }' > /root/.bowerrc && bower install",
+    "postinstall": "bower install",
     "serv": "./node_modules/.bin/gulp",
     "cyp": "cypress run --spec cypress/integration/tst_spec.js"
   },
@@ -51,8 +51,7 @@
     "matchdep": "0.3.0",
     "merge": "^1.2.0",
     "mocha-phantomjs": "~3.1.0",
-    "time-grunt": "0.4.0",
-    "cypress": "^4.8.0"
+    "time-grunt": "0.4.0"
   },
   "engines": {
     "node": ">=0.8.0"
