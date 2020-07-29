@@ -15,7 +15,7 @@
   },
   "scripts": {
     "serv": "gulp",
-    "cyp": "./node_modules/.bin/cypress run --spec tst_spec.js"
+    "cyp": "cypress run --spec cypress/integration/tst_spec.js"
   },
   "devDependencies": {
     "bower": "^1.8.0",

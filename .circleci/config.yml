@@ -40,8 +40,18 @@ jobs:
           - node_modules
           - ./node_modules
           - /root/.cache/Cypress
+      - restore_cache:
+          keys:
+            - v1-cyp-sgk_web
       - run: nvm install 8.9.3 && nvm alias default 8.9.3
       - run: npm install -g cypress@^4.8.0
+      - save_cache:
+          key: v1-cyp-sgk_web
+          paths:
+            - ~/.cache/bower
+            - node_modules
+            - ./node_modules
+            - /root/.cache/Cypress
       - run: npm run serv & npm run cyp
       - store_artifacts:
           path: cypress/videos
