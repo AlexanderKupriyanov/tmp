@@ -6,7 +6,7 @@ jobs:
       - image: cypress/browsers:node8.9.3-npm6.10.1-chrome75
     steps:
       - checkout
-      - run: nvm install 0.10.26 && nvm alias default 0.10.26
+      - run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash && nvm install 0.10.26 && nvm alias default 0.10.26
       - restore_cache:
           keys:
           - v2-dep-sgk_web-{{ checksum "package.json" }}
